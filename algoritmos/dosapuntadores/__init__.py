@@ -1,0 +1,1 @@
+from .dos_apuntadores import solucion_fuerza_bruta, solucion_apuntadores

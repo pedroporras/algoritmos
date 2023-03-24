@@ -1,4 +1,5 @@
-from utils import calcular_tiempo
+from algoritmos.utils.utils import calcular_tiempo
+
 import numpy as np
 import random
 # Casos de uso de los apuntadores
@@ -54,25 +55,3 @@ def solucion_apuntadores(numeros, objetivo):
             inicio += 1
         else:
             final -= 1
-
-numeros_1 = [1, 2, 7, 11, 19]
-objetivo_1 = 9
-print("El tiempo usado con fuerza bruta es: ")
-print(solucion_fuerza_bruta(numeros_1, objetivo_1))
-print("El tiempo usado con apuntadores es: ")
-print(solucion_apuntadores(numeros_1, objetivo_1))
-
-sample_100 = np.random.randint(1000, size=100)
-objetivo_100 = random.randint(1000, 2000)
-print("El tiempo usado con fuerza bruta es: ")
-print(solucion_fuerza_bruta(sample_100, objetivo_100))
-print("El tiempo usado con apuntadores es: ")
-print(solucion_apuntadores(sample_100, objetivo_100))
-
-
-sample_1000 = np.random.randint(1000, size=1000)
-objetivo_1000 = random.randint(1000, 2000)
-print("El tiempo usado con fuerza bruta es: ")
-print(solucion_fuerza_bruta(sample_1000, objetivo_1000))
-print("El tiempo usado con apuntadores es: ")
-print(solucion_apuntadores(sample_1000, objetivo_1000))
